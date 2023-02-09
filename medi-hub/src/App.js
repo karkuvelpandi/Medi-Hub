@@ -1,11 +1,12 @@
 import React from 'react'
-import SocialMediaBar from './Common Components/Navbar/SocialMediaBar'
-
+import './App.css'
+import SocialMediaBar from './CommonComponents/Navbar/SocialMediaBar'
+import Navbar from './CommonComponents/Navbar/Navbar'
 const App = () => {
   return <>
   
   <SocialMediaBar/>
-  
+     <Navbar/>
   
   
   
