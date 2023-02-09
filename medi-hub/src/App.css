@@ -1,0 +1,33 @@
+
+/******** Common styles **********/
+/** CSS Reset **/
+*{
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+/** GENERAL STYLES **/
+body{
+  background-color: #f2f3f5;
+  /* To prevent user to select the text in website */
+  user-select: none; 
+  -ms-user-select: none;
+  -webkit-user-select: none;
+}
+
+/** BLOCKS **/
+.container-sm{
+  max-width:1290;
+  width: 100%;
+  height: fit-content;
+  margin: auto;
+}
+.container-lg{
+  width: 100%;
+  height: fit-content;
+  margin: auto;
+}
+.zoomEffect:hover{
+  transform: scale(1.2);
+}
