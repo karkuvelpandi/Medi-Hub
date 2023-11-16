@@ -1,0 +1,350 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Nunito, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: rgb(58, 58, 58);
+    background: rgb(248, 248, 248);
+}
+
+.feedback-container {
+    padding: 1rem;
+}
+
+.feedback-container .header h1 {
+    font-size: 28px;
+    padding-bottom: 13px;
+}
+
+.feedback-container .card {
+    padding: 21px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0px;
+    overflow-wrap: break-word;
+    background-color: rgb(255, 255, 255);
+    background-clip: initial;
+    border-radius: 0.75rem;
+    box-shadow: rgba(0, 0, 0, 0.04) 0px 1px 15px, rgba(0, 0, 0, 0.04) 0px 1px 6px;
+}
+
+.feedback-container .card h5 {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.feedback-container .separator {
+    border-bottom: 1px solid rgb(215, 215, 215);
+    margin-bottom: 2rem !important;
+}
+
+.label-card:has(> input:checked) {
+    background: rgb(238, 238, 238);
+}
+
+.icon-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 16px;
+    padding-left: 1rem;
+}
+
+.icon-container .icon-wrapper,
+.icon-container .icon-title,
+.browser-container .browser-title,
+.browser-container .browser-wrapper,
+.comprehend-container .comprehend-wrapper,
+.comprehend-container .comprehend-title,
+.question-container .question-wrapper,
+.question-container .question-tittle {
+    width: 50%;
+}
+
+.icon-container .icon-wrapper {
+    display: flex;
+    width: 50%;
+}
+
+.icon-container .icon-wrapper .icon-card {
+    flex: 1 1 0%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    flex-flow: column;
+    gap: 5px;
+}
+
+.icon-container .icon-wrapper .icon-card p {
+    font-size: 12px;
+}
+
+.icon-container .icon-wrapper .icon {
+    width: 30px;
+}
+
+.browser-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    border: 1px solid gainsboro;
+    border-radius: 0.75rem;
+    overflow: hidden;
+    padding-left: 1rem;
+    margin-bottom: 20px;
+}
+
+.browser-container .browser-wrapper {
+    display: flex;
+}
+
+.browser-container input {
+    position: absolute;
+    visibility: hidden;
+}
+
+.browser-container .label-card {
+    display: flex;
+    height: 100%;
+    width: auto;
+}
+
+.browser-container .label-card {
+    flex: 1 1 0%;
+    display: flex;
+    padding: 16px;
+    border-left: 1px solid gainsboro;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    flex-flow: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.browser-container .label-card .icon {
+    height: 30px;
+}
+
+.comprehend-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 16px;
+    border-radius: 0.75rem;
+    overflow: hidden;
+    padding: 1rem;
+}
+
+.comprehend-container .comprehend-wrapper {
+    display: flex;
+    gap: 2rem;
+}
+
+.comprehend-card {
+    position: relative;
+    cursor: pointer;
+    font-size: 16px;
+    user-select: none;
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    flex-direction: row-reverse;
+}
+
+.question-card input,
+.comprehend-card input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0px;
+    width: 0px;
+    display: none;
+}
+
+.checkmark {
+    position: static;
+    height: 16px;
+    width: 16px;
+    background-color: rgb(238, 238, 238);
+    border-radius: 50%;
+    display: none;
+}
+
+.comprehend-card :hover input~.checkmark,
+.question-card :hover input~.checkmark {
+    background-color: rgb(204, 204, 204);
+}
+
+.comprehend-card input:checked~.checkmark,
+.question-card input:checked~.checkmark {
+    background-color: rgb(33, 150, 243);
+}
+
+.checkmark::after {
+    content: "";
+    display: none;
+}
+
+.comprehend-card input:checked~.checkmark::after,
+.question-card input:checked~.checkmark::after {
+    display: block;
+}
+
+.comprehend-card .checkmark::after,
+.question-card .checkmark::after {
+    top: 4px;
+    left: 4px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: white;
+}
+
+.question-card:has(> input:checked) {
+    background: rgb(238, 238, 238);
+}
+
+.question-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    border: 1px solid gainsboro;
+    border-radius: 0.75rem;
+    overflow: hidden;
+    padding-left: 1rem;
+}
+
+.question-container .question-wrapper {
+    display: flex;
+}
+
+.question-container .question-wrapper .question-card {
+    position: relative;
+    cursor: pointer;
+    font-size: 16px;
+    flex: 1 1 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-flow: column;
+    gap: 5px;
+    padding: 1rem;
+    border-left: 1px solid gainsboro;
+}
+
+.question-container {
+    margin-bottom: 17px;
+}
+
+.comprehend-container {
+    margin-bottom: 37px;
+    border: 1px solid gainsboro;
+}
+
+.icon-container {
+    margin-bottom: 14px;
+}
+
+.comprehend-container .comprehend-wrapper span.checkmark {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.question-container:last-child {
+    margin-bottom: 0px;
+}
+
+@media screen and (max-width: 900px) {
+    .browser-container,
+    .question-container {
+        flex-direction: column;
+        align-items: flex-start;
+        border: 0px;
+        padding-left: 0px;
+        border-radius: 0px;
+        gap: 12px;
+    }
+    .question-container .question-wrapper {
+        width: 100%;
+        border: 1px solid gainsboro;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+    .question-container .question-wrapper .question-card:first-child {
+        border-left: 0px;
+    }
+    .icon-container {
+        padding-left: 0px;
+    }
+    .icon-container .icon-wrapper {
+        margin-bottom: 15px;
+    }
+    .comprehend-container {
+        gap: 14px;
+        flex-direction: column;
+        padding: 0px;
+        font-weight: 600;
+        border: 0px;
+        border-radius: 0px;
+    }
+    .browser-container .label-card {
+        padding: 7px;
+    }
+    .browser-container .label-card .icon {
+        height: 18px;
+    }
+    .browser-container .label-card {
+        font-size: 14px;
+        padding: 8px 10px;
+    }
+    .browser-container .browser-wrapper {
+        border: 1px solid gainsboro;
+        width: 100%;
+        border-radius: 10px;
+    }
+    .feedback-container .card {
+        padding: 12px;
+    }
+    .browser-container .label-card:first-child {
+        border-left: 0px;
+    }
+    .question-container .question-wrapper .question-card {
+        padding: 8px;
+        font-size: 14px;
+    }
+    .question-title {
+        font-weight: 600;
+    }
+    .browser-container .browser-title {
+        width: 100%;
+        font-weight: 600;
+    }
+    .icon-container .icon-wrapper {
+        width: 100%;
+    }
+    .feedback-container .header h1 {
+        font-size: 21px;
+    }
+    .comprehend-container .comprehend-title {
+        width: 100%;
+        padding: 0px;
+    }
+    .comprehend-container .comprehend-wrapper {
+        width: 100%;
+        border: 1px solid gainsboro;
+        padding: 14px;
+        border-radius: 10px;
+    }
+}

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <!-- Styles -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <section class="feedback-container">
+        <div class="header">
+            <h1>Feedback Form</h1>
+            <!-- <p>Please let us know if there are additional questions to add to this survey that will be beneficial for
+                your team.
+            </p> -->
+            <div class="separator"></div>
+        </div>
+        <div class="card">
+            <h5>Survey Queries</h5>
+            <form action="">
+                <div class="browser-container">
+                    <p class="browser-title"> What browser did you use? </p>
+                    <div class="browser-wrapper">
+                        <label for="chrome" class="label-card">
+                            <img src="./assets/UI/Chrome.png" class="icon" alt="1">
+                            <input type="radio" id="chrome" name="browserRadio">
+                            <p>Chrome</p>
+                        </label>
+                        <label for="fireFox" class="label-card">
+                            <img src="./assets/UI/firefox.png" class="icon" alt="2">
+                            <input type="radio" id="fireFox" name="browserRadio">
+                            <p>FireFox</p>
+                        </label>
+                        <label for="edge" class="label-card">
+                            <img src="./assets/UI/edge.png" class="icon" alt="2">
+                            <input type="radio" id="edge" name="browserRadio">
+                            <p>Edge</p>
+                        </label>
+                        <label for="safari" class="label-card">
+                            <img src="./assets/UI/safari.png" class="icon" alt="2">
+                            <input type="radio" id="safari" name="browserRadio">
+                            <p>Safari</p>
+                        </label>
+                        <label for="others" class="label-card">
+                            <img src="./assets/UI/others.png" class="icon" alt="2">
+                            <input type="radio" id="others" name="browserRadio">
+                            <p>Others</p>
+                        </label>
+                    </div>
+                </div>
+                <div class="comprehend-container">
+                    <p class="comprehend-title">Were the questions fair and easy to comprehend?</p>
+                    <div class="comprehend-wrapper">
+                        <label class="comprehend-card">Yes
+                            <input type="radio" name="1" checked>
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="comprehend-card">No
+                            <input type="radio" name="1">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+                <div class="icon-container">
+                    <div class="icon-wrapper">
+                        <div class="icon-card">
+                            <img src="./assets/UI/1.png" class="icon" alt="1">
+                            <p>Poor</p>
+                        </div>
+                        <div class="icon-card">
+                            <img src="./assets/UI/2.png" class="icon" alt="2">
+                            <p>Average</p>
+                        </div>
+                        <div class="icon-card">
+                            <img src="./assets/UI/3.png" class="icon" alt="3">
+                            <p>Good</p>
+                        </div>
+                        <div class="icon-card">
+                            <img src="./assets/UI/4.png" class="icon" alt="4">
+                            <p>Very Good</p>
+                        </div>
+                        <div class="icon-card">
+                            <img src="./assets/UI/5.png" class="icon" alt="5">
+                            <p>Excellent</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="question-container">
+                    <p class="question-title">How was the user experience?</p>
+                    <div class="question-wrapper">
+                        <label for="question1-1" class="question-card">1
+                            <input id="question1-1" type="radio" name="userExperience">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label for="question1-2" class="question-card">2
+                            <input id="question1-2" type="radio" name="userExperience">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label for="question1-3" class="question-card">3
+                            <input id="question1-3" type="radio" name="userExperience">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label for="question1-4" class="question-card">4
+                            <input id="question1-4" type="radio" name="userExperience">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label for="question1-5" class="question-card">5
+                            <input id="question1-5" type="radio" name="userExperience">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+                <div class="question-container">
+                    <p class="question-title"> Was it easy to navigate?</p>
+                    <div class="question-wrapper">
+                        <label for="question2-1" class="question-card">1
+                            <input id="question2-1" type="radio" name="easyNavigate">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label for="question2-2" class="question-card">2
+                            <input id="question2-2" type="radio" name="easyNavigate">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label for="question2-3" class="question-card">3
+                            <input id="question2-3" type="radio" name="easyNavigate">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label for="question2-4" class="question-card">4
+                            <input id="question2-4" type="radio" name="easyNavigate">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label for="question2-5" class="question-card">5
+                            <input id="question2-5" type="radio" name="easyNavigate">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+                <div class="question-container">
+                    <p class="question-title"> Was there a smooth flow throughout the assessment?</p>
+                    <div class="question-wrapper">
+                        <label for="question3-1" class="question-card">1
+                            <input id="question3-1" type="radio" name="assessmentFlow">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label for="question3-2" class="question-card">2
+                            <input id="question3-2" type="radio" name="assessmentFlow">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label for="question3-3" class="question-card">3
+                            <input id="question3-3" type="radio" name="assessmentFlow">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label for="question3-4" class="question-card">4
+                            <input id="question3-4" type="radio" name="assessmentFlow">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label for="question3-5" class="question-card">5
+                            <input id="question3-5" type="radio" name="assessmentFlow">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+                <div class="question-container">
+                    <p class="question-title"> How easy were they to comprehend?</p>
+                    <div class="question-wrapper">
+                        <label for="question4-1" class="question-card">1
+                            <input id="question4-1" type="radio" name="easyToComprehend">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label for="question4-2" class="question-card">2
+                            <input id="question4-2" type="radio" name="easyToComprehend">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label for="question4-3" class="question-card">3
+                            <input id="question4-3" type="radio" name="easyToComprehend">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label for="question4-4" class="question-card">4
+                            <input id="question4-4" type="radio" name="easyToComprehend">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label for="question4-5" class="question-card">5
+                            <input id="question4-5" type="radio" name="easyToComprehend">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+</body>
+
+</html>
+
+<!-- 
+    Survey Questions
+
+What browser did you use?
+How was the user experience?
+Was it easy to navigate?
+Was there a smooth flow throughout the assessment?
+Were the questions fair and easy to comprehend?
+How easy were they to comprehend
+Survey Answers
+
+Chrome, FireFox, Edge, Safari, Other
+Scale 1-5 (poor, average, good, very good, excellent)
+Scale 1-5
+Scale 1-5 
+(Y/N)
+Scale 1-5
+ -->
