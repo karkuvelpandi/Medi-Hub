@@ -26,8 +26,18 @@ const LoginScreen = () => {
           src="http://pngimg.com/uploads/youtube/youtube_PNG2.png"
           alt="youtube_logo"
         />
-        <button onClick={handleLogin}>Login with google</button>
         <p>This Project is made using YOUTUBE DATA API</p>
+        <p>
+          <strong>Important Notice:</strong>
+          <br /> Before logging in, if you encounter an empty Home screen,
+          <br /> kindly bring it to our attention by notifying me &nbsp;
+          <a href="https://www.linkedin.com/in/karkuvel-pandi-p-906234195/">
+            here
+          </a>
+          .<br /> This issue may be attributed to the exhaustion of the YouTube
+          API quota for the day.
+        </p>
+        <button onClick={handleLogin}>Login with google</button>
       </div>
     </div>
   );
