@@ -1,0 +1,147 @@
+@import "../../base";
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+  background-color: $black-primary;
+  height: 8vh;
+  width: 100%;
+
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  &__left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    position: relative;
+    &__menu {
+      color: #fff;
+      padding: 8px;
+      height: 40px;
+      width: 40px;
+      cursor: pointer;
+      &:hover {
+        border-radius: 50%;
+        background-color: #333;
+      }
+    }
+    &__logo {
+      width: 120px;
+      height: 30px;
+      object-fit: contain;
+      display: block;
+      cursor: pointer;
+    }
+    span {
+      position: absolute;
+      right: 15px;
+      top: 2px;
+      font-size: 10px;
+    }
+  }
+  &__searchBar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex: 0.6;
+    &__mic {
+      color: #fff;
+      padding: 8px;
+      height: 40px;
+      width: 40px;
+      cursor: pointer;
+      border-radius: 50%;
+      background-color: #333;
+    }
+    form {
+      flex: 1;
+      display: flex;
+      margin: 0.1rem;
+      overflow: hidden;
+      border-radius: 25px;
+      background-color: $black-secondary;
+
+      input {
+        width: 100%;
+        border: none;
+        font-weight: 500;
+        padding-left: 0.8rem;
+        border-top-left-radius: 25px;
+        border-bottom-left-radius: 25px;
+        background: transparent;
+        border: 1px solid $border-color-secondary;
+        // padding: 0.3rem;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        color: $text-color;
+        &:focus {
+          outline: none;
+          border: 1px solid #065fd4;
+        }
+      }
+      button {
+        padding: 0 1.25rem;
+        color: $text-color;
+        background: #323232;
+        border: none;
+        &:focus {
+          border: none;
+        }
+      }
+    }
+  }
+  // &__menu {
+  // }
+
+  &__icons {
+    flex: 0.15;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    img {
+      border-radius: 50%;
+      width: 40px;
+      object-fit: contain;
+      margin-left: 5px;
+    }
+  }
+}
+
+@media (max-width: $breakpoint-small) {
+  .header {
+    padding: 1rem;
+    &__searchBar {
+      flex: 1;
+      &__mic {
+        display: none;
+      }
+      form {
+        flex: 1;
+      }
+    }
+    &__left {
+      &__logo {
+        display: none;
+      }
+      .country-logo {
+        display: none;
+      }
+    }
+
+    // &__menu {
+    //   display: block;
+    // }
+    &__logo {
+      display: none;
+    }
+
+    &__icons > *:not(img) {
+      display: none;
+    }
+  }
+}

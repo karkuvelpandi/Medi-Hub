@@ -1,0 +1,81 @@
+@import "../../base";
+
+.sidebar {
+  // background: $black-secondary;
+  background: $black-primary;
+  display: flex;
+  flex-direction: column;
+  max-width: 240px;
+  width: 100%;
+  height: 92vh;
+  padding: 0 0.8rem;
+  transition: transform 0.2s ease-in;
+
+  position: sticky;
+  top: 8vh;
+  left: 0;
+
+  a {
+    color: $text-color;
+    text-decoration: none;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    li {
+      display: flex;
+      align-items: center;
+      color: #fff;
+
+      padding: 0.6rem 0.8rem;
+      margin: 0.2rem 0;
+      cursor: pointer;
+
+      span {
+        margin-left: 1rem;
+        font-size: 14px;
+        font-weight: 500;
+        letter-spacing: 0.4px;
+      }
+      &:hover {
+        background: $border-color-secondary;
+        border-radius: 10px;
+      }
+      &.active {
+        background: $border-color-secondary;
+        border-radius: 10px;
+        &:hover {
+          background: $border-color;
+        }
+      }
+    }
+    hr {
+      background-color: $border-color-secondary;
+    }
+  }
+  &.open {
+    transform: translateX(0);
+  }
+}
+
+@media (max-width: $breakpoint-medium) {
+  .sidebar {
+    width: 90px;
+    padding: 0;
+    li {
+      justify-content: center;
+      span {
+        display: none;
+      }
+    }
+  }
+}
+
+@media (max-width: $breakpoint-small) {
+  .sidebar {
+    transform: translateX(-100%);
+    position: fixed;
+    z-index: 999;
+  }
+}
