@@ -1,7 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+main {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 27px;
+  padding-top: 0;
+  background: #e8e8e8;
 }
 
 .heading {
@@ -30,41 +48,56 @@
   display: flex;
   justify-content: center;
   position: relative;
-  padding: 1rem;
   flex-wrap: wrap;
+  padding: 15px 0;
+  align-items: center;
 }
 
 .navigation p {
   font-weight: 700;
   flex: 1;
-  text-align: center;
+  text-align: left;
   padding: 5px;
   cursor: default;
+  font-size: 22px;
 }
 
 .navigation button {
   all: unset;
   background-color: black;
-  border: 2px solid white;
   color: white;
-  padding: 4px 8px;
-  border-radius: 5px;
+  padding: 10px 19px;
+  border-radius: 100px;
   cursor: pointer;
+  margin-left: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
 }
 
 .navigation button:hover {
   background-color: white;
-  border: 2px solid black;
+  border: 0;
   color: black;
 }
 
 .editor {
   border-radius: 10px;
   padding: 1rem;
-  margin: 1rem;
-  border: 2px solid gainsboro;
+  border: 1px solid #7b7b7b;
+  margin: 0;
+  flex: 1;
+  background: #fff;
+  box-shadow: 0 0 10px #d2d2d2;
 }
 
 .editor.active {
-  border: 2px solid gray;
+  border: 1px solid gray;
+  box-shadow: 0 0 10px #939292;
+}
+
+.DraftEditor-root {
+  height: 100% !important;
+  line-height: 26px;
 }
